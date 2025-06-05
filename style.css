@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.landing-page {
+    height: 105vh;
+    width: 110%;
+    margin: -15px 0px -15px -15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.637)), url("img/landscape.jpg");
+    filter: blur(16px);
+    -webkit-filter: blur(16px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.hidden-landing-page {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+}
+
+.landing-navbar {
+    background-color: white;
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+}
+
+.left-navbar {
+    width: 50%;
+    background-color: purple;
+}
