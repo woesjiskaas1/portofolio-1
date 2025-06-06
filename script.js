@@ -2,12 +2,17 @@ const element = document.getElementById("landing");
 const visible = document.getElementById('visible');
 
 const logPercentageSeen = () => {
-    if (percentageSeen() >= 85) {
+    console.log(percentageSeen());
+    if (percentageSeen() >= 95) {
         console.log(`hi`);
-        element.classList.replace("landing-page", "hidden-landing-page")
+        document.querySelector(".landing-navbar").style.position = "sticky"
+        document.querySelector(".landing-navbar").style.top = "0px"
+        document.querySelector(".landing-navbar").style.background = "linear-gradient(rgba(255, 255, 255, 0.43), rgba(255, 255, 255, 0))"
+
     } else {
         console.log(percentageSeen());
-         element.classList.replace("hidden-landing-page", "landing-page")
+        document.querySelector(".landing-navbar").style.position = "absolute"
+         document.querySelector(".landing-navbar").style.background = "linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0))"
     }
 }
 
