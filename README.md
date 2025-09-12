@@ -2,6 +2,7 @@
 
 features
 
-~landing page~
+landing page
 -
+
 
