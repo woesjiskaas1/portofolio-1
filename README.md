@@ -8,7 +8,8 @@
 # features
 
 ## landing page
--[ ] picute
+- [ ] picute
+
 
 
 
