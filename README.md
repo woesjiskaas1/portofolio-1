@@ -7,9 +7,9 @@
 
 # features
 
-landing page
+## landing page
 -
--[x]picture
+[] picute
 
 
 
