@@ -1,9 +1,15 @@
 ﻿# portfolio-1
 
-#features
+
+
+
+
+
+# features
 
 landing page
 -
+[x] picture
 
 
 
