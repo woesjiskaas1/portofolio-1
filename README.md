@@ -9,7 +9,8 @@
 
 landing page
 -
-[x] picture
+[x]picture
+
 
 
 
