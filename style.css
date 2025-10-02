@@ -241,19 +241,15 @@ body {
 }
 
 .content {
+    max-width: 1035px;
     margin: auto;
-    width: 885px;
+    width: 80%;
     height: 85vh;
     background-color: white;
     border-radius: 25px;
-
 }
 
-.content-left {
-    align-content: start;
-    /* width: 50%; */
-    height: 75%;
-}
+
 
 .content-left>img {
     border-radius: 25px 25px 0px 0px;
@@ -293,6 +289,28 @@ body {
     height: 30px;
 }
 
+@media only screen and (min-width: 990px) {
+.content-left {
+    align-content: start;
+    /* width: 50%; */
+    height: 75%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        margin: auto;
+        width: 90%;
+        height: 85vh;
+        background-color: white;
+        border-radius: 25px;
+
+    }
+
+    .content-left {
+        align-content: start;
+    }
+}
 
 /* -----------------------------------------------slideshow------------------------------------ */
 /* Slideshow container */
