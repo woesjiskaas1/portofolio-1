@@ -1,0 +1,80 @@
+{
+    "projecten": [
+        {
+            "img": "img/Schermafbeelding 2025-06-05 144946.png",
+            "title": "eindproject",
+            "paragraph": "ik moest een webshop maken voor school",
+            "details": {
+                "title": "eindproject FE rookie",
+                "beschrijving": "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi ",
+                "repo": "https://github.com/woesjiskaas1/rookie-eindproject/tree/main",
+                "talen": [
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                ],
+                "img": "Schermafbeelding 2025-06-05 144946.png"
+            }
+        },
+        {
+            "img": "img/photo-collage.png.png",
+            "title": "frameworks",
+            "paragraph": "we moesten 4 websites maken voor een deepdive",
+            "details": {
+                "title": "frameworks",
+                "beschrijving": "",
+                "repo": "https://github.com/woesjiskaas1/bootstrap-deepdive",
+                "talen": [
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bulma/bulma-plain.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/foundation/foundation-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                ],
+                "img": [
+                    "Schermafbeelding 2025-09-17 100324.png",
+                    "Schermafbeelding 2025-09-17 100232.png",
+                    "Schermafbeelding 2025-09-17 100259.png",
+                    "Schermafbeelding 2025-09-17 100207.png"
+                ]
+            }
+        },
+        {
+            "img": "img/Schermafbeelding 2025-09-16 132357.png",
+            "title": "poxedex",
+            "paragraph": "we moesten als een team van 6 een pokedex maken",
+            "details": {
+                "title": "pokedex",
+                "beschrijving": "",
+                "repo": "https://github.com/RindoGaming/Pokedex",
+                "talen": [
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+                ],
+                "img": "Schermafbeelding 2025-09-16 132357.png"
+            }
+        }
+    ],
+    "blog": [
+        {
+            "img": "no-image.jpg",
+            "title": "blog 1",
+            "paragraph": "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas."
+        },
+        {
+            "img": "no-image.jpg",
+            "title": "blog 2",
+            "paragraph": "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas."
+        },
+        {
+            "img": "no-image.jpg",
+            "title": "blog 3",
+            "paragraph": "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas."
+        }
+    ]
+}

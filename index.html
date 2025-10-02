@@ -12,36 +12,136 @@
 <body>
     <nav class="landing-navbar">
         <div class="left-navbar">
-            <h1 class="navbar-item">senn</h1>
-            <h2 class="navbar-item">projects</h2>
-            <h2 class="navbar-item">contact me</h2>
+            <h1 class="navbar-item"><a href="index.html#landingA" style="text-decoration: none; color: black;">
+                    <h1 style="font-size: 200%;" class="navbar-item">Senn</h1>
+                </a></h1>
+            <h2 class="navbar-item" id="projects"><a href="index.html#blog-cardhouse"
+                    style="text-decoration: none; color: black;">
+                    <h2 style="font-size: 100%;" class="navbar-item">blog</h2>
+                </a></h2>
+            <h2 class="navbar-item" id="projects"><a href="index.html#projectstitle"
+                    style="text-decoration: none; color: black;">
+                    <h2 style="font-size: 100%;" class="navbar-item">projects</h2>
+                </a></h2>
+            <h2 class="navbar-item">contact</h2>
+        </div>
+        <div class="right-navbar">
+            <h2 class="navbar-item">linkedin</h2>
+            <h2 class="navbar-item">github</h2>
         </div>
     </nav>
     <div class="landing-page" id="landing">
-        <img class="selfie" src="img/image.jpg" alt="picture of me">
-        <div class="aboutme">Hi, I'm <span style="color: #28a745;">Senn van Piggelen.</span> This is my portofolio
-            website showcasing my projects and
-            achievements.</div>
+        <img class="selfie" src="img/profile.jpg" alt="picture of me">
+        <div class="aboutme">Hi, ik ben <span style="color: #28a745;">Senn van Piggelen.</span> dit is mijn portofolio
+            website. om mijn projecten te laten zien</div>
     </div>
     <div class="projects">
-        <h1 class="projectstitle">projects</h1>
-        <div class="cardhouse">
-            <div class="card">
-                <div class="cardimg"><img src="img/Schermafbeelding 2025-06-05 144946.png" alt="rookie project">
-                    <p class="imgtext">ik moest een webshop maken voor school</p>
+        <h1 id="projectstitle" class="projectstitle">projects</h1>
+        <div class="cardhouse" id="cardhouse">
+            <template id="cardTemplate">
+                <div class="card">
+                    <img src="img/Schermafbeelding 2025-06-05 144946.png" alt="Avatar" class="image" id="img">
+                    <div class="overlay">
+                        <h1 id="title">eindproject</h1>
+                        <p id="paragraph">ik moest een webshop maken voor school</p>
+                    </div>
                 </div>
-                <div class="cardcontext">
-                    <h1>rookie eindproject</h1>
+            </template>
+        </div>
+    </div>
+    <div id="modal" class="background-modal">
 
+    </div>
+    <template id="content-template">
+        <div class="content">
+            <div id="content-left" class="content-left">
+                <div id="slideshow-container" class="slideshow-container">
+
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div id="dots" style="text-align:center">
+
+                </div>
+
+
+            </div>
+            <div class="content-right">
+                <div class="content-top">
+                    <h1 id="content-title">pokedex</h1>
+                    <div class="language" id="content-talen">
+                    </div>
+                    <div class="repo">
+                        <a id="content-repo"
+                            href="https://github.com/woesjiskaas1/rookie-eindproject/tree/main">https://github.com/woesjiskaas1/rookie-eindproject/tree/main</a>
+                    </div>
+                </div>
+                <div class="content-bottom">
+                    <p id="content-beschrijving">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+                        impedit omnis repudiandae quod
+                        fuga, exercitationem magnam nesciunt veritatis tempora harum assumenda aspernatur aut ullam
+                        mollitia consequatur. Perspiciatis soluta nesciunt laborum dolor sequi culpa nihil.
+                        Repellendus
+                        minus tenetur aliquam aliquid ex.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="projects">
-        <h1 class="projectstitle">projects</h1>
-        <div class="cardhouse">
+    </template>
+    <template id="modal-slideshow"><!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+
+
+
+            <!-- Next and previous buttons -->
+
+        </div>
+    </template>
+    <template id="modal-onlyImg">
+        <img id="modal-img" src="./img/Schermafbeelding 2025-06-05 144946.png" alt="pokedex" style="width: 100%;">
+    </template>
+    <template id="modal-slideshowContent">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+    </template>
+
+
+    <!-- --------------------------------------------------------------blog------------------------------------------- -->
+    <div class="blog">
+        <h1 class="blogtitle">blog</h1>
+        <div id="blog-cardhouse" class="blog-cardhouse cardhouse">
+            
         </div>
     </div>
+    <template id="blog-post-template">
+        <div class="blog-post">
+                <img src="./img/no-image.jpg" alt="no image" class="image-blog" id="blog-img">
+                <hr>
+                <div class="blog-text">
+                    <h1 id="blog-title">blog 1</h1>
+                    <p id="blog-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit vero eum soluta quidem vitae
+                        quis cum assumenda ipsum quos deleniti! Natus excepturi dolor aut cum? Sed sapiente officia
+                        asperiores quibusdam totam! Incidunt accusamus a accusantium voluptatibus esse, ratione expedita
+                        impedit.</p>
+                </div>
+            </div>
+    </template>
+    <!-- ---------------------------------------------------------------contact-------------------------------------------- -->
+     <footer>
+        <h1 class="contactTitle">blog</h1>
+        <div class="contact-content">
+            <p>nummer: <a href="tel:+310681299472">+310681299472</a></p>
+  <p>e-mail: <a href="mailto:senn20vanpiggelen@gmail.com">senn20vanpiggelen@gmail.com</a></p>
+        </div>
+     </footer>
 </body>
 
 </html>
