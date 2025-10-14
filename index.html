@@ -7,15 +7,16 @@
     <title>portofolio senn</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <nav class="landing-navbar">
         <div class="left-navbar">
-            <h1 class="navbar-item"><a href="index.html#landingA" style="text-decoration: none; color: black;">
-                    <h1 style="font-size: 200%;" class="navbar-item">Senn</h1>
-                </a></h1>
-            <!-- <h2 class="navbar-item" id="projects"><a href="index.html#blog-cardhouse"
+            <h2 class="navbar-item"><a href="index.html#landingA" style="text-decoration: none; color: black;">
+                    <h1 style="font-size: 200%;" class="navbar-item logo">Senn</h1>
+                </a></h2>
+            <h2 class="navbar-item" id="projects"><a href="index.html#blog-cardhouse"
                     style="text-decoration: none; color: black;">
                     <h2 style="font-size: 100%;" class="navbar-item">blog</h2>
                 </a></h2>
@@ -23,12 +24,16 @@
                     style="text-decoration: none; color: black;">
                     <h2 style="font-size: 100%;" class="navbar-item">projects</h2>
                 </a></h2>
-            <h2 class="navbar-item">contact</h2> -->
+            <h2 class="navbar-item">contact</h2>
         </div>
-        <div class="right-navbar">
-            <h2 class="navbar-item">linkedin</h2>
-            <h2 class="navbar-item">github</h2>
+        <div class="right-navbar open">
+            <h2 class="navbar-item  responsive">linkedin</h2>
+            <h2 class="navbar-item  responsive">github</h2>
+
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
     <div class="landing-page" id="landing">
         <img class="selfie" src="img/profile.jpg" alt="picture of me">
@@ -118,30 +123,31 @@
     <div class="blog">
         <h1 class="blogtitle">blog</h1>
         <div id="blog-cardhouse" class="blog-cardhouse cardhouse">
-            
+
         </div>
     </div>
     <template id="blog-post-template">
         <div class="blog-post">
-                <img src="./img/no-image.jpg" alt="no image" class="image-blog" id="blog-img">
-                <hr>
-                <div class="blog-text">
-                    <h1 id="blog-title">blog 1</h1>
-                    <p id="blog-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit vero eum soluta quidem vitae
-                        quis cum assumenda ipsum quos deleniti! Natus excepturi dolor aut cum? Sed sapiente officia
-                        asperiores quibusdam totam! Incidunt accusamus a accusantium voluptatibus esse, ratione expedita
-                        impedit.</p>
-                </div>
+            <img src="./img/no-image.jpg" alt="no image" class="image-blog" id="blog-img">
+            <hr>
+            <div class="blog-text">
+                <h1 id="blog-title">blog 1</h1>
+                <p id="blog-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit vero eum
+                    soluta quidem vitae
+                    quis cum assumenda ipsum quos deleniti! Natus excepturi dolor aut cum? Sed sapiente officia
+                    asperiores quibusdam totam! Incidunt accusamus a accusantium voluptatibus esse, ratione expedita
+                    impedit.</p>
             </div>
+        </div>
     </template>
     <!-- ---------------------------------------------------------------contact-------------------------------------------- -->
-     <footer>
+    <footer>
         <h1 class="contactTitle">blog</h1>
         <div class="contact-content">
             <p>nummer: <a href="tel:+310681299472">+310681299472</a></p>
-  <p>e-mail: <a href="mailto:senn20vanpiggelen@gmail.com">senn20vanpiggelen@gmail.com</a></p>
+            <p>e-mail: <a href="mailto:senn20vanpiggelen@gmail.com">senn20vanpiggelen@gmail.com</a></p>
         </div>
-     </footer>
+    </footer>
 </body>
 
 </html>

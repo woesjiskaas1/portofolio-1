@@ -22,16 +22,21 @@ jsonOphalen()
 
 
 const logPercentageSeen = () => {
+    const navbar = document.querySelector(".landing-navbar")
     if (percentageSeen() >= 95) {
-        // console.log(`hi`);
-        document.querySelector(".landing-navbar").style.position = "sticky"
-        document.querySelector(".landing-navbar").style.top = "0px"
-        document.querySelector(".landing-navbar").style.background = "linear-gradient(rgba(255, 255, 255, 0.43), rgba(255, 255, 255, 0))"
+        console.log(`hi`);
 
+        if (navbar.classList != "moving") {
+            document.querySelector(".landing-navbar").classList.remove("normal");
+            document.querySelector(".landing-navbar").classList.add("moving");
+        }
     } else {
+        console.log(`hi2`);
         // console.log(percentageSeen());
-        document.querySelector(".landing-navbar").style.position = "absolute"
-        document.querySelector(".landing-navbar").style.background = "linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0))"
+        if (navbar.classList != "normal") {
+            document.querySelector(".landing-navbar").classList.remove("moving");
+            document.querySelector(".landing-navbar").classList.add("normal");
+        }
     }
 }
 
@@ -47,7 +52,8 @@ const percentageSeen = () => {
     // Calculate percentage of the element that's been seen
     const distance = (scrollTop + viewportHeight) - elementOffsetTop;
     const percentage = Math.round(distance / ((viewportHeight + elementHeight) / 100));
-
+    console.log(percentage);
+    
     // Restrict the range to between 0 and 100
     return Math.min(100, Math.max(0, percentage));
 
@@ -213,7 +219,7 @@ function showingblog(data) {
             if (!Object.hasOwn(element, key)) continue;
             const content = element[key];
             const HTMLSomething = clone.getElementById(`blog-${key}`)
-            if (HTMLSomething instanceof HTMLImageElement) {     
+            if (HTMLSomething instanceof HTMLImageElement) {
                 HTMLSomething.src = `./img/${content}`
             } else {
                 HTMLSomething.innerText = content
@@ -224,4 +230,29 @@ function showingblog(data) {
     }
 
 
+}
+
+
+// -----------------------------------responsive navbar--------------------------------
+console.log(document.querySelector(".left-navbar"));
+
+function movingthings() {
+    const lefty = document.querySelector(".left-navbar")
+    for (const el of lefty) {
+        console.log(el);
+
+    }
+}
+
+function responsiveNavbar() {
+    const nav = document.querySelector('.right-navbar')
+    console.log(nav.classList);
+    
+    if (nav.classList != "right-navbar open") {
+        nav.classList.add("open");
+        nav.classList.remove("closed");
+    } else {
+        nav.classList.remove("open");
+        nav.classList.add("closed");
+    }
 }
