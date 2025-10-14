@@ -141,6 +141,9 @@ body {
         display: block;
         margin: 0px;
     }
+    #recht-nav > a{
+        color: black;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -173,9 +176,12 @@ body {
         float: right;
         display: block;
     }
+
+    #recht-nav > a{
+        color: white;
+    }
 }
 
-@media screen and (max-width: 800px) {}
 
 
 
